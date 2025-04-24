@@ -1,0 +1,22 @@
+/* style.css */
+
+body {
+    text-align: center;
+    background-color: #579ff8;
+    padding: 20px;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#feed {
+    margin-top: 30px
+}
+
+button {
+    background-color: #1ee72b;
+    border: none;
+    border-radius: 5px;
+}
+  
