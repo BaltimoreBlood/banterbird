@@ -45,9 +45,6 @@ try {
 }
 };
 
-
-
-
 setInterval(async () =>{
     try {
         const response = await fetch("/api/posts");
@@ -57,6 +54,4 @@ setInterval(async () =>{
     } catch (error) {
         console.error("Error fetching posts:", error);
     }
-    };
-
 }, 5000);
