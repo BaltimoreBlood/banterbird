@@ -44,3 +44,19 @@ try {
     console.error("Error fetching posts:", error);
 }
 };
+
+
+
+
+setInterval(async () =>{
+    try {
+        const response = await fetch("/api/posts");
+        const posts = await response.json();
+        posts.forEach((post) => renderPost(post));
+        document.getElementById("feed").innerHTML = "";
+    } catch (error) {
+        console.error("Error fetching posts:", error);
+    }
+    };
+
+}, 5000);
